@@ -11,8 +11,8 @@ app.use(bodyParser.urlencoded({
 	extended: true
 }));
 
-var cats = require('./routes/dog.js')(app);
+var dogRoutes = require('./routes/dog.js')(app);
 
-var server = app.listen(3000, function () {
-	console.log('listening to http://127.0.0.1:3000/');
+var server = app.listen(3001, function () {
+	console.log('Dog server is running at http://127.0.0.1:3001/');
 });
